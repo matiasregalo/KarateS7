@@ -39,34 +39,6 @@ Scenario: POST create user account
   And match response.message == 'User created!'
 
 Scenario: GET user account detail by email
-  * def create_user_request =
-  """
-  {
-    "name": "Matias Regalo",
-    "email": "#(test_email)",
-    "password": "#(test_password)",
-    "title": "Mr",
-    "birth_date": "6",
-    "birth_month": "April",
-    "birth_year": "2006",
-    "firstname": "Matias",
-    "lastname": "Regalo",
-    "company": "Sofka.",
-    "address1": "Salto 919",
-    "address2": "Brandsen 2162",
-    "country": "Uruguay",
-    "zipcode": "12345",
-    "state": "Montevideo",
-    "city": "Montevideo",
-    "mobile_number": "094390927"
-  }
-  """
-  Given path '/api/createAccount'
-  And form fields create_user_request
-  When method post
-  Then status 200
-  And match response.responseCode == '#? _ == 201 || _ == 400'
-
   Given path '/api/getUserDetailByEmail'
   And param email = test_email
   When method get
@@ -76,35 +48,6 @@ Scenario: GET user account detail by email
   And match response.user.first_name == 'Matias'
 
 Scenario: PUT update user account
-  * def create_user_request =
-  """
-  {
-    "name": "Matias Regalo",
-    "email": "#(test_email)",
-    "password": "#(test_password)",
-    "title": "Mr",
-    "birth_date": "6",
-    "birth_month": "April",
-    "birth_year": "2006",
-    "firstname": "Matias",
-    "lastname": "Regalo",
-    "company": "Sofka.",
-    "address1": "Salto 919",
-    "address2": "Brandsen 2162",
-    "country": "Uruguay",
-    "zipcode": "12345",
-    "state": "Montevideo",
-    "city": "Montevideo",
-    "mobile_number": "094390927"
-  }
-  """
-
-  Given path '/api/createAccount'
-  And form fields create_user_request
-  When method post
-  Then status 200
-  And match response.responseCode == '#? _ == 201 || _ == 400'
-
   * def update_user_request =
   """
   {
@@ -136,35 +79,6 @@ Scenario: PUT update user account
   And match response.message == 'User updated!'
 
 Scenario: DELETE user account
-  * def create_user_request =
-  """
-  {
-    "name": "Matias Regalo",
-    "email": "#(test_email)",
-    "password": "#(test_password)",
-    "title": "Mr",
-    "birth_date": "6",
-    "birth_month": "April",
-    "birth_year": "2006",
-    "firstname": "Matias",
-    "lastname": "Regalo",
-    "company": "Sofka.",
-    "address1": "Salto 919",
-    "address2": "Brandsen 2162",
-    "country": "Uruguay",
-    "zipcode": "12345",
-    "state": "Montevideo",
-    "city": "Montevideo",
-    "mobile_number": "094390927"
-  }
-  """
-
-  Given path '/api/createAccount'
-  And form fields create_user_request
-  When method post
-  Then status 200
-  And match response.responseCode == '#? _ == 201 || _ == 400'
-
   Given path '/api/deleteAccount'
   And form fields { email: '#(test_email)', password: '#(test_password)' }
   When method delete
