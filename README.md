@@ -24,14 +24,25 @@ mvn -version
 
 ```
 src/test/java/
-├── karate-config.js          # Configuración global de Karate
-├── examples/
-│   ├── ExamplesTest.java     # Runner principal (JUnit 5, paralelo)
+├── karate-config.js              # Configuración global (mínima, sin setup costoso)
+├── logback-test.xml              # Configuración de logging
+├── Test.java             # Runner principal (JUnit 5, paralelo x5)
+├── common/
+│   └── common-utils.feature      # Utilidades reutilizables: uuid, timestamp, etc.
+├── data/
 │   └── users/
-│       ├── createUser.feature   # POST  /api/createAccount
-│       ├── getUser.feature      # GET   /api/getUserDetailByEmail
-│       ├── updateUser.feature   # PUT   /api/updateAccount
-│       └── deleteUser.feature   # DELETE /api/deleteAccount
+│       ├── create-user.json      # Datos base para creación de usuario
+│       └── update-user.json      # Datos base para actualización de usuario
+└── features/
+    └── users/
+        ├── create-user.feature    # POST   /api/createAccount
+        ├── CreateUserRunner.java
+        ├── get-user.feature       # GET    /api/getUserDetailByEmail
+        ├── GetUserRunner.java
+        ├── update-user.feature    # PUT    /api/updateAccount
+        ├── UpdateUserRunner.java
+        ├── delete-user.feature    # DELETE /api/deleteAccount
+        └── DeleteUserRunner.java
 ```
 
 ---
@@ -76,12 +87,12 @@ Después de ejecutar los tests, los reportes HTML se generan automáticamente en
 
 ```
 target/karate-reports/
-├── karate-summary.html          # Resumen general de la ejecución
-├── karate-timeline.html         # Línea de tiempo de los escenarios
-├── examples.users.createUser.html
-├── examples.users.getUser.html
-├── examples.users.updateUser.html
-└── examples.users.deleteUser.html
+├── karate-summary.html              # Resumen general de la ejecución
+├── karate-timeline.html             # Línea de tiempo de los escenarios
+├── features.users.create-user.html
+├── features.users.get-user.html
+├── features.users.update-user.html
+└── features.users.delete-user.html
 ```
 
 Abrir el reporte principal:
@@ -97,9 +108,9 @@ start target\karate-reports\karate-summary.html
 
 | Feature         | Método HTTP | Endpoint                        | Validación principal          |
 |-----------------|-------------|---------------------------------|-------------------------------|
-| createUser      | POST        | `/api/createAccount`            | `responseCode == 201`         |
-| getUser         | GET         | `/api/getUserDetailByEmail`     | `responseCode == 200`         |
-| updateUser      | PUT         | `/api/updateAccount`            | `message == 'User updated!'`  |
-| deleteUser      | DELETE      | `/api/deleteAccount`            | `message == 'Account deleted!'` |
+| create-user      | POST        | `/api/createAccount`            | `responseCode == 201`         |
+| get-user         | GET         | `/api/getUserDetailByEmail`     | `responseCode == 200`         |
+| update-user      | PUT         | `/api/updateAccount`            | `message == 'User updated!'`  |
+| delete-user      | DELETE      | `/api/deleteAccount`            | `message == 'Account deleted!'` |
 
-> Los features `getUser`, `updateUser` y `deleteUser` reutilizan `createUser.feature@create_user` para generar un usuario fresco antes de cada prueba
+> Los features `get-user`, `update-user` y `delete-user` reutilizan `create-user.feature@create_user` para generar un usuario fresco antes de cada prueba

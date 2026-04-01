@@ -1,8 +1,11 @@
 Feature: Get user account detail by email
 
+  Background:
+    * configure url = baseUrl
+
   Scenario: GET user account detail by email
-    * def created = call read('createUser.feature@create_user')
-    Given url 'https://automationexercise.com/api/getUserDetailByEmail'
+    * def created = call read('classpath:features/users/create-user.feature@create_user')
+    Given path '/api/getUserDetailByEmail'
     And param email = created.user_email
     When method get
     Then status 200

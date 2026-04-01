@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestRunner" time="8.522" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\matia\Desktop\LUNES\KARATE_REPO\Ejemplo\target\test-classes;C:\Users\matia\Desktop\LUNES\KARATE_REPO\Ejemplo\target\classes;C:\Users\matia\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\matia\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\matia\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\matia\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\matia\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\matia\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\matia\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\matia\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\matia\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.6\jackson-core-2.18.6.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\matia\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\matia\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\matia\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\matia\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\matia\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport\4.2.8.Final\netty-transport-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-common\4.2.8.Final\netty-common-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-buffer\4.2.8.Final\netty-buffer-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver\4.2.8.Final\netty-resolver-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-haproxy\4.2.8.Final\netty-codec-haproxy-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-base\4.2.8.Final\netty-codec-base-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-http2\4.2.8.Final\netty-codec-http2-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-handler\4.2.8.Final\netty-handler-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-http\4.2.8.Final\netty-codec-http-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-compression\4.2.8.Final\netty-codec-compression-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver-dns\4.2.8.Final\netty-resolver-dns-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-dns\4.2.8.Final\netty-codec-dns-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final-linux-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final-linux-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final-osx-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final-osx-aarch_64.jar;C:\Users\matia\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\matia\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\matia\.m2\repository\io\netty\netty-handler-proxy\4.2.8.Final\netty-handler-proxy-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-socks\4.2.8.Final\netty-codec-socks-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-epoll\4.2.8.Final\netty-transport-native-epoll-4.2.8.Final-linux-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-classes-epoll\4.2.8.Final\netty-transport-classes-epoll-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-epoll\4.2.8.Final\netty-transport-native-epoll-4.2.8.Final-linux-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-kqueue\4.2.8.Final\netty-transport-native-kqueue-4.2.8.Final-osx-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-classes-kqueue\4.2.8.Final\netty-transport-classes-kqueue-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.2.8.Final\netty-resolver-dns-native-macos-4.2.8.Final-osx-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.2.8.Final\netty-resolver-dns-classes-macos-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-kqueue\4.2.8.Final\netty-transport-native-kqueue-4.2.8.Final-osx-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.2.8.Final\netty-resolver-dns-native-macos-4.2.8.Final-osx-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-linux-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-classes\2.0.74.Final\netty-tcnative-classes-2.0.74.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-linux-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-osx-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-osx-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-windows-x86_64.jar;C:\Users\matia\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\matia\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\matia\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\matia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\matia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\matia\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\matia\.m2\repository\ch\qos\logback\logback-classic\1.5.25\logback-classic-1.5.25.jar;C:\Users\matia\.m2\repository\ch\qos\logback\logback-core\1.5.25\logback-core-1.5.25.jar;C:\Users\matia\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\matia\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\matia\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\matia\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\matia\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\matia\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\matia\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\matia\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\matia\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\matia\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\matia\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\matia\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\matia\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\matia\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\matia\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\matia\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\matia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\matia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\matia\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\matia\AppData\Local\Temp\surefire13361258278642760497\surefirebooter-20260331192150255_3.jar C:\Users\matia\AppData\Local\Temp\surefire13361258278642760497 2026-03-31T19-21-49_849-jvmRun1 surefire-20260331192150255_1tmp surefire_0-20260331192150255_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\matia\Desktop\LUNES\KARATE_REPO\Ejemplo\target\test-classes;C:\Users\matia\Desktop\LUNES\KARATE_REPO\Ejemplo\target\classes;C:\Users\matia\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\matia\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\matia\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\matia\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\matia\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\matia\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\matia\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\matia\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\matia\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\matia\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.6\jackson-core-2.18.6.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\matia\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\matia\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\matia\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\matia\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\matia\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\matia\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport\4.2.8.Final\netty-transport-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-common\4.2.8.Final\netty-common-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-buffer\4.2.8.Final\netty-buffer-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver\4.2.8.Final\netty-resolver-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-haproxy\4.2.8.Final\netty-codec-haproxy-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-base\4.2.8.Final\netty-codec-base-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-http2\4.2.8.Final\netty-codec-http2-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-handler\4.2.8.Final\netty-handler-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-http\4.2.8.Final\netty-codec-http-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-compression\4.2.8.Final\netty-codec-compression-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver-dns\4.2.8.Final\netty-resolver-dns-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-dns\4.2.8.Final\netty-codec-dns-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final-linux-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final-linux-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final-osx-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final-osx-aarch_64.jar;C:\Users\matia\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\matia\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\matia\.m2\repository\io\netty\netty-handler-proxy\4.2.8.Final\netty-handler-proxy-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-codec-socks\4.2.8.Final\netty-codec-socks-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-epoll\4.2.8.Final\netty-transport-native-epoll-4.2.8.Final-linux-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-unix-common\4.2.8.Final\netty-transport-native-unix-common-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-classes-epoll\4.2.8.Final\netty-transport-classes-epoll-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-epoll\4.2.8.Final\netty-transport-native-epoll-4.2.8.Final-linux-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-kqueue\4.2.8.Final\netty-transport-native-kqueue-4.2.8.Final-osx-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-classes-kqueue\4.2.8.Final\netty-transport-classes-kqueue-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.2.8.Final\netty-resolver-dns-native-macos-4.2.8.Final-osx-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.2.8.Final\netty-resolver-dns-classes-macos-4.2.8.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-transport-native-kqueue\4.2.8.Final\netty-transport-native-kqueue-4.2.8.Final-osx-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.2.8.Final\netty-resolver-dns-native-macos-4.2.8.Final-osx-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-linux-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-classes\2.0.74.Final\netty-tcnative-classes-2.0.74.Final.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-linux-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-osx-x86_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-osx-aarch_64.jar;C:\Users\matia\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.74.Final\netty-tcnative-boringssl-static-2.0.74.Final-windows-x86_64.jar;C:\Users\matia\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\matia\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\matia\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\matia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\matia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\matia\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\matia\.m2\repository\ch\qos\logback\logback-classic\1.5.25\logback-classic-1.5.25.jar;C:\Users\matia\.m2\repository\ch\qos\logback\logback-core\1.5.25\logback-core-1.5.25.jar;C:\Users\matia\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\matia\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\matia\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\matia\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\matia\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\matia\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\matia\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\matia\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\matia\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\matia\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\matia\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\matia\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\matia\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\matia\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\matia\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\matia\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\matia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\matia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\matia\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\matia"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\matia\Desktop\LUNES\KARATE_REPO\Ejemplo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\matia\AppData\Local\Temp\surefire13361258278642760497\surefirebooter-20260331192150255_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.17+10"/>
+    <property name="user.name" value="matia"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.17+10"/>
+    <property name="localRepository" value="C:\Users\matia\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\matia\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.17"/>
+    <property name="user.dir" value="C:\Users\matia\Desktop\LUNES\KARATE_REPO\Ejemplo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\matia\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\matia\bin;C:\Users\matia\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\matia\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\matia\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\GitHub CLI;C:\Program Files\RedHat\Podman;C:\Maven\apache-maven-3.9.14-bin\apache-maven-3.9.14\bin;%JAVA_HOME%\bin;C:\ProgramData\chocolatey\bin;C:\Users\matia\AppData\Local\Microsoft\WindowsApps;C:\Users\matia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\matia\AppData\Roaming\npm;C:\Users\matia\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\matia\AppData\Local\Python\bin;C:\ProgramData\matia\gitkraken\bin;C:\Users\matia\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\Users\AppData\Local\Python\pythoncore-3.14-64\Scripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.17+10"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testParallel" classname="TestRunner" time="8.473">
+    <system-out><![CDATA[19:21:52.965 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:21:52.976 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+19:21:54.946 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:21:54.946 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:21:54.947 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:21:54.946 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:21:55.104 [pool-2-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - classpath:features/users/create-user.feature - call by tag at line 10: create_user
+19:21:55.104 [pool-2-thread-3] INFO  c.intuit.karate.core.FeatureRuntime - classpath:features/users/create-user.feature - call by tag at line 10: create_user
+19:21:55.104 [pool-2-thread-4] INFO  c.intuit.karate.core.FeatureRuntime - classpath:features/users/create-user.feature - call by tag at line 10: create_user
+19:21:55.218 [pool-2-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callonce: email_factory
+19:21:55.217 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: email_factory
+19:21:55.217 [pool-2-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callonce: email_factory
+19:21:55.217 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: email_factory
+19:21:55.521 [pool-2-thread-2] INFO  com.intuit.karate - << lock released, cached callonce: email_factory
+19:21:55.521 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: email_factory
+19:21:55.521 [pool-2-thread-3] INFO  com.intuit.karate - << lock released, cached callonce: email_factory
+19:21:55.521 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: email_factory
+19:21:56.632 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 339
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo&email=matiasregalo64%2B80d85094-3503-489b-96ac-26772a489824%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka.&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:56.632 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 339
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo&email=matiasregalo64%2B9873e0b4-a6a8-45a4-88f4-4805cc90eef5%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka.&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:56.632 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 339
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo&email=matiasregalo64%2Bd0e0ba6e-279e-4e78-be3e-938fbf54f9b5%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka.&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:56.632 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 339
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo&email=matiasregalo64%2B32989f7f-d907-4ff3-827e-196d613cf663%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka.&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:57.446 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 814
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, POST
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BavpxnPi1J1nbWUafghtS5RNyDBmyAgoobEKxrqbPEE57bga3xZW7WJrQqtO%2FkqjIfpqm1PAXmwR9TjLnY0QiNF67i0gpGkYT3kahmBd1UPsspDbRJtOYWtzFGwzGVd7xLHSNVrTmhYn"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=278
+1 < CF-RAY: 9e536fd84e240d94-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+19:21:57.464 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 832
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, POST
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RWDyTb4HWQD9Z48ENrF25BeEBXrsiHpPlMruoGuDpw7ZIhRkBEJTVEwxPDUoJQWV0ULA71AUTV14a%2F8dAxxgEzcQWeKzlgrpHUgzLcHyrN0Xd1TyrMauqgEL1rJaFyGvjArSo6yGJtLc"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=10,cfOrigin;dur=274
+1 < CF-RAY: 9e536fd84de6875c-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+19:21:57.464 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 832
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, POST
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HLXMxPiR3%2FOjMNuXMpTJwLZ3lNxLEyI5ugVziJM5bdKmJEpVmB1Osa7tSpHshY5oIP%2F4vTPqhg5lUKkBQY4e8Hg1CTnr9D9dW%2BH2ZiZEfBDxZs69AZMFWPDHYlxOAFFuTJ73BB9koZe7"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=292
+1 < CF-RAY: 9e536fd838a52634-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+19:21:57.464 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 831
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4T9SWnO2jT7urvkdD2B5ZHZ9hNlEb0qFOLkrWOPLcwJh%2FmEI6N4f9QGGLWa0CaPJbKCc2TFCVAm6EsUwP9ML3CzXMpycq0z%2BgkicNaSeH8GYFAHjO2a%2FLQDTbHZ%2FrtX6iAfVBFPXZEBN"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=10,cfOrigin;dur=305
+1 < CF-RAY: 9e536fd84ebf8b47-TPA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+19:21:57.565 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT https://automationexercise.com/api/updateAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 354
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo+Updated&email=matiasregalo64%2Bd0e0ba6e-279e-4e78-be3e-938fbf54f9b5%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka+Updated&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:57.566 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE https://automationexercise.com/api/deleteAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 87
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+email=matiasregalo64%2B9873e0b4-a6a8-45a4-88f4-4805cc90eef5%40gmail.com&password=123456
+
+19:21:57.571 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://automationexercise.com/api/getUserDetailByEmail?email=matiasregalo64%2B32989f7f-d907-4ff3-827e-196d613cf663%40gmail.com
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:21:57.790 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 218
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: PUT, OPTIONS, GET, POST, DELETE
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Wn6RHG4O8ih%2BWdQJhe9h%2Fx5GOI2PPFvd79gwbkh%2FmG46rDIIFKN6sDZAB42i9VyNxQe1iIqCjILP1XZdBAVI%2FaFJjV7rGAQMJI8XT3AZtZytB2yACnF7AcFUZlCv1f2Fy4l%2FXUkfFw59"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=75
+1 < CF-RAY: 9e536fdbc8065129-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "user": {"id": 1529773, "name": "Matias Regalo", "email": "matiasregalo64+32989f7f-d907-4ff3-827e-196d613cf663@gmail.com", "title": "Mr", "birth_day": "6", "birth_month": "April", "birth_year": "2006", "first_name": "Matias", "last_name": "Regalo", "company": "Sofka.", "address1": "Salto 919", "address2": "Brandsen 2162", "country": "Uruguay", "state": "Montevideo", "city": "Montevideo", "zipcode": "12345"}}
+
+19:21:58.006 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 423
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, DELETE
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=68RpnfQjM4NhJiLjhZt%2Bm8UW2DUskrnhh%2BWjwu0Tu%2FFdoC7xevmjULA5GcqW5MS4o%2B8%2FW8pmxwOglNHzb6JojfOTJhMJjI3tJJe3S2CYu3BXPgyTrJS5DGRunukBJmDG9KYXr0L5PeaE"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=275
+1 < CF-RAY: 9e536fdbcbe88752-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "Account deleted!"}
+
+19:21:58.054 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 488
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: PUT, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=a2Dv%2FMNs%2BCCTfWC8AAFg0f1V%2F%2FJQs%2B3o8f%2FIIoGKQpPy%2BXkslbV%2Ffx1tnM02FUHzwbaOQ%2Ba%2FgK9QhuS7he7G54U4%2BMWTAFpdUd%2FfV8NqidRJJt5vZEgi12bzOdgK4aTVD7RAgy72PWFw"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=7,cfOrigin;dur=282
+1 < CF-RAY: 9e536fdc195e99b9-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "User updated!"}
+
+---------------------------------------------------------
+feature: classpath:features/users/create-user.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2,4655
+---------------------------------------------------------
+
+19:21:58.861 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:features/users/create-user.feature
+---------------------------------------------------------
+feature: classpath:features/users/delete-user.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2,9238
+---------------------------------------------------------
+
+19:21:59.069 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:features/users/delete-user.feature
+---------------------------------------------------------
+feature: classpath:features/users/get-user.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2,7204
+---------------------------------------------------------
+
+19:21:59.275 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:features/users/get-user.feature
+---------------------------------------------------------
+feature: classpath:features/users/update-user.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2,9737
+---------------------------------------------------------
+
+19:21:59.387 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:features/users/update-user.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   7,47 | threads:    5 | thread time: 11,08 
+features:     4 | skipped:    0 | efficiency: 0,30
+scenarios:    4 | passed:     4 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///C:/Users/matia/Desktop/LUNES/KARATE_REPO/Ejemplo/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

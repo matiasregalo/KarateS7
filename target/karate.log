@@ -1,0 +1,250 @@
+19:21:52.965 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:21:52.976 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+19:21:54.946 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:21:54.946 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:21:54.947 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:21:54.946 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:21:55.104 [pool-2-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - classpath:features/users/create-user.feature - call by tag at line 10: create_user
+19:21:55.104 [pool-2-thread-3] INFO  c.intuit.karate.core.FeatureRuntime - classpath:features/users/create-user.feature - call by tag at line 10: create_user
+19:21:55.104 [pool-2-thread-4] INFO  c.intuit.karate.core.FeatureRuntime - classpath:features/users/create-user.feature - call by tag at line 10: create_user
+19:21:55.218 [pool-2-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callonce: email_factory
+19:21:55.217 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: email_factory
+19:21:55.217 [pool-2-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callonce: email_factory
+19:21:55.217 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: email_factory
+19:21:55.521 [pool-2-thread-2] INFO  com.intuit.karate - << lock released, cached callonce: email_factory
+19:21:55.521 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: email_factory
+19:21:55.521 [pool-2-thread-3] INFO  com.intuit.karate - << lock released, cached callonce: email_factory
+19:21:55.521 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: email_factory
+19:21:56.632 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 339
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo&email=matiasregalo64%2B80d85094-3503-489b-96ac-26772a489824%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka.&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:56.632 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 339
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo&email=matiasregalo64%2B9873e0b4-a6a8-45a4-88f4-4805cc90eef5%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka.&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:56.632 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 339
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo&email=matiasregalo64%2Bd0e0ba6e-279e-4e78-be3e-938fbf54f9b5%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka.&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:56.632 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 339
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo&email=matiasregalo64%2B32989f7f-d907-4ff3-827e-196d613cf663%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka.&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:57.446 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 814
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, POST
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BavpxnPi1J1nbWUafghtS5RNyDBmyAgoobEKxrqbPEE57bga3xZW7WJrQqtO%2FkqjIfpqm1PAXmwR9TjLnY0QiNF67i0gpGkYT3kahmBd1UPsspDbRJtOYWtzFGwzGVd7xLHSNVrTmhYn"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=278
+1 < CF-RAY: 9e536fd84e240d94-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+19:21:57.464 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 832
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, POST
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RWDyTb4HWQD9Z48ENrF25BeEBXrsiHpPlMruoGuDpw7ZIhRkBEJTVEwxPDUoJQWV0ULA71AUTV14a%2F8dAxxgEzcQWeKzlgrpHUgzLcHyrN0Xd1TyrMauqgEL1rJaFyGvjArSo6yGJtLc"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=10,cfOrigin;dur=274
+1 < CF-RAY: 9e536fd84de6875c-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+19:21:57.464 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 832
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, POST
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HLXMxPiR3%2FOjMNuXMpTJwLZ3lNxLEyI5ugVziJM5bdKmJEpVmB1Osa7tSpHshY5oIP%2F4vTPqhg5lUKkBQY4e8Hg1CTnr9D9dW%2BH2ZiZEfBDxZs69AZMFWPDHYlxOAFFuTJ73BB9koZe7"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=292
+1 < CF-RAY: 9e536fd838a52634-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+19:21:57.464 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 831
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4T9SWnO2jT7urvkdD2B5ZHZ9hNlEb0qFOLkrWOPLcwJh%2FmEI6N4f9QGGLWa0CaPJbKCc2TFCVAm6EsUwP9ML3CzXMpycq0z%2BgkicNaSeH8GYFAHjO2a%2FLQDTbHZ%2FrtX6iAfVBFPXZEBN"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=10,cfOrigin;dur=305
+1 < CF-RAY: 9e536fd84ebf8b47-TPA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+19:21:57.565 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT https://automationexercise.com/api/updateAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 354
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+name=Matias+Regalo+Updated&email=matiasregalo64%2Bd0e0ba6e-279e-4e78-be3e-938fbf54f9b5%40gmail.com&password=123456&title=Mr&birth_date=6&birth_month=April&birth_year=2006&firstname=Matias&lastname=Regalo&company=Sofka+Updated&address1=Salto+919&address2=Brandsen+2162&country=Uruguay&zipcode=12345&state=Montevideo&city=Montevideo&mobile_number=094390927
+
+19:21:57.566 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE https://automationexercise.com/api/deleteAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 87
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+email=matiasregalo64%2B9873e0b4-a6a8-45a4-88f4-4805cc90eef5%40gmail.com&password=123456
+
+19:21:57.571 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://automationexercise.com/api/getUserDetailByEmail?email=matiasregalo64%2B32989f7f-d907-4ff3-827e-196d613cf663%40gmail.com
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:21:57.790 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 218
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: PUT, OPTIONS, GET, POST, DELETE
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Wn6RHG4O8ih%2BWdQJhe9h%2Fx5GOI2PPFvd79gwbkh%2FmG46rDIIFKN6sDZAB42i9VyNxQe1iIqCjILP1XZdBAVI%2FaFJjV7rGAQMJI8XT3AZtZytB2yACnF7AcFUZlCv1f2Fy4l%2FXUkfFw59"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=75
+1 < CF-RAY: 9e536fdbc8065129-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "user": {"id": 1529773, "name": "Matias Regalo", "email": "matiasregalo64+32989f7f-d907-4ff3-827e-196d613cf663@gmail.com", "title": "Mr", "birth_day": "6", "birth_month": "April", "birth_year": "2006", "first_name": "Matias", "last_name": "Regalo", "company": "Sofka.", "address1": "Salto 919", "address2": "Brandsen 2162", "country": "Uruguay", "state": "Montevideo", "city": "Montevideo", "zipcode": "12345"}}
+
+19:21:58.006 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 423
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, DELETE
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=68RpnfQjM4NhJiLjhZt%2Bm8UW2DUskrnhh%2BWjwu0Tu%2FFdoC7xevmjULA5GcqW5MS4o%2B8%2FW8pmxwOglNHzb6JojfOTJhMJjI3tJJe3S2CYu3BXPgyTrJS5DGRunukBJmDG9KYXr0L5PeaE"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=275
+1 < CF-RAY: 9e536fdbcbe88752-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "Account deleted!"}
+
+19:21:58.054 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 488
+1 < 200
+1 < Date: Wed, 01 Apr 2026 00:22:00 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: PUT, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=a2Dv%2FMNs%2BCCTfWC8AAFg0f1V%2F%2FJQs%2B3o8f%2FIIoGKQpPy%2BXkslbV%2Ffx1tnM02FUHzwbaOQ%2Ba%2FgK9QhuS7he7G54U4%2BMWTAFpdUd%2FfV8NqidRJJt5vZEgi12bzOdgK4aTVD7RAgy72PWFw"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=7,cfOrigin;dur=282
+1 < CF-RAY: 9e536fdc195e99b9-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "User updated!"}
+
+19:21:58.861 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:features/users/create-user.feature
+19:21:59.069 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:features/users/delete-user.feature
+19:21:59.275 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:features/users/get-user.feature
+19:21:59.387 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:features/users/update-user.feature
